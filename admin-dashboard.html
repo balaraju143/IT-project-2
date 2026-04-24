@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <img src="images/stackly.logo.jpeg" class="logo">
+
+    <a class="active"><i class="fa fa-chart-pie"></i> Dashboard</a>
+    <a href="404.html"><i class="fa fa-folder"></i> Manage Projects</a>
+    <a href="404.html"><i class="fa fa-users"></i> Manage Users</a>
+    <a href="404.html"><i class="fa fa-chart-line"></i> Reports</a>
+    <a href="404.html"><i class="fa fa-cog"></i> Settings</a>
+
+    <a class="logout" onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <input type="text" placeholder="Search users or reports...">
+
+      <div class="profile">
+        <span>Admin Panel</span>
+        <small>Administrator</small>
+      </div>
+    </div>
+
+    <h1>Admin Dashboard</h1>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+      <div class="card">
+        <h3>Total Users</h3>
+        <h2>150</h2>
+        <p class="green">↑ 30% growth</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Projects</h3>
+        <h2>50</h2>
+        <p class="green">↑ 10% increase</p>
+      </div>
+
+      <div class="card">
+        <h3>Revenue</h3>
+        <h2>₹4.5L</h2>
+        <p class="green">↑ Monthly profit</p>
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <div class="box">
+        <h3>Recent Activity</h3>
+        <p>New user registered</p>
+        <p>Project approved</p>
+        <p>Server updated</p>
+      </div>
+
+      <div class="box">
+        <h3>Admin Tasks</h3>
+        <p>Approve user requests</p>
+        <p>Check reports</p>
+        <p>System maintenance</p>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

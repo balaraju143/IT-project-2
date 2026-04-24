@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <img src="images/stackly.logo.jpeg" class="logo">
+
+    <a class="active"><i class="fa fa-chart-pie"></i> Dashboard</a>
+    <a href="404.html"><i class="fa fa-folder"></i> Projects</a>
+    <a href="404.html"><i class="fa fa-chart-line"></i> Analytics</a>
+    <a href="404.html"><i class="fa fa-users"></i> Team</a>
+    <a href="404.html"><i class="fa fa-cog"></i> Settings</a>
+
+    <a class="logout" onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <input type="text" placeholder="Search projects or members...">
+
+      <div class="profile">
+        <span>Balaraju</span>
+        <small>Employee</small>
+      </div>
+    </div>
+
+    <h1>Overview Dashboard</h1>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+      <div class="card">
+        <h3>Total Projects</h3>
+        <h2>40</h2>
+        <p class="green">↑ 15% from last month</p>
+      </div>
+
+      <div class="card">
+        <h3>Active Tasks</h3>
+        <h2>100</h2>
+        <p class="red">↓ 3% from last month</p>
+      </div>
+
+      <div class="card">
+        <h3>Team Members</h3>
+        <h2>30</h2>
+        <p class="green">↑ 2 new this week</p>
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <div class="box">
+        <h3>Recent Activity</h3>
+        <p>Code merge to main branch</p>
+        <p>AWS infrastructure scaled</p>
+      </div>
+
+      <div class="box">
+        <h3>My Tasks</h3>
+        <p>Update SSL Certificates - Pending</p>
+        <p>Client Demo Setup - Done</p>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
