@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: arial;
+   background: #f3f4f6;
   
 }
 
@@ -23,7 +24,7 @@ nav {
   gap: 20px;
 }
 nav a {
-  color: black;
+  color:black;
   text-decoration: none;
 }
 
@@ -91,7 +92,7 @@ nav a {
 /* NAVBAR LOGIN BUTTON */
 .login-btn {
   background: #2563eb;
-  color: black !important;
+  color: black;
   padding: 6px 14px;
   border-radius: 6px;
   font-size: 14px;
@@ -110,13 +111,14 @@ nav a {
 @media (max-width: 768px) {
 
   nav {
-    display: none;
+    display:flex;
     flex-direction: column;
     background: #222;
     position: absolute;
     right: 0;
     top: 60px;
     width: 200px;
+    overflow: hidden;
   }
 
   nav.active {
@@ -137,6 +139,8 @@ nav a {
 
   .menu-toggle {
    display:block;
+   font-size:24px;
+   cursor: pointer;
   }
 }
 
@@ -199,30 +203,7 @@ nav a {
 }
 
 
-@media (max-width: 768px) {
-
-   .login-btn {
-    display: block;
-    margin: 10px;
-    text-align: center;
-  }
-  nav {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    position: absolute;
-    right: 0;
-    top: 60px;
-    width: 200px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+@media (max-width: 768p){
 
   .footer-container {
     flex-direction: column;
